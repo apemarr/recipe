@@ -72,7 +72,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Recetas" id="knt-VG-Lav"/>
+                    <tabBarItem key="tabBarItem" title="Recetas" image="recipes.png" id="knt-VG-Lav"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Recetas" id="Zmp-9m-9U2">
                         <barButtonItem key="rightBarButtonItem" title="Añadir Receta" id="wTQ-AV-gsz">
@@ -273,7 +273,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.79042105602280732" blue="0.74697929982251288" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Perfil" id="JMz-Ue-T6s"/>
+                    <tabBarItem key="tabBarItem" title="Perfil" image="profile.png" id="JMz-Ue-T6s"/>
                     <navigationItem key="navigationItem" title="Perfil" id="Okg-xt-OAW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oCf-ko-dhk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -284,7 +284,7 @@
         <scene sceneID="cDS-DB-CSh">
             <objects>
                 <navigationController id="UG5-Bp-ad0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Perfil" id="pIT-D9-PPJ"/>
+                    <tabBarItem key="tabBarItem" title="Perfil" image="profile.png" id="pIT-D9-PPJ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xFZ-xa-6zl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -301,7 +301,7 @@
         <scene sceneID="848-nd-0Mg">
             <objects>
                 <navigationController id="oU2-8P-Jyt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Recetas" id="W2T-10-xgK"/>
+                    <tabBarItem key="tabBarItem" title="Recetas" image="recipes.png" id="W2T-10-xgK"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sr4-S8-Svl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -318,7 +318,7 @@
         <scene sceneID="pCm-N6-0wW">
             <objects>
                 <navigationController id="Kzf-hH-llh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Ingredientes" id="fGC-UN-0Zn"/>
+                    <tabBarItem key="tabBarItem" title="Ingredientes" image="ingredients.png" id="fGC-UN-0Zn"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="o38-7S-cRl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -357,7 +357,7 @@
         <scene sceneID="U0v-Bt-adv">
             <objects>
                 <navigationController id="PRs-ul-ryt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Cocina" id="jkZ-Eb-EbG"/>
+                    <tabBarItem key="tabBarItem" title="Cocina" image="cooking.png" id="jkZ-Eb-EbG"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uo6-EL-7nN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -383,7 +383,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.67520146205308673" green="0.72096310698817767" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Cocina" id="hUD-mq-wYY"/>
+                    <tabBarItem key="tabBarItem" title="Cocina" image="cooking.png" id="hUD-mq-wYY"/>
                     <navigationItem key="navigationItem" title="Cocina" id="wmn-oZ-esK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sjw-yi-jyA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -438,7 +438,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.47681519137627537" green="1" blue="0.73277602992149815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Ingredientes" id="S6g-2h-scN"/>
+                    <tabBarItem key="tabBarItem" title="Ingredientes" image="ingredients.png" id="S6g-2h-scN"/>
                     <navigationItem key="navigationItem" title="Ingredientes" id="z47-ga-ULa"/>
                     <connections>
                         <outlet property="tableView" destination="y93-SY-nTJ" id="JE3-XK-K5j"/>
@@ -449,5 +449,11 @@
             <point key="canvasLocation" x="-522.39999999999998" y="7.6461769115442282"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cooking.png" width="28" height="32"/>
+        <image name="ingredients.png" width="18" height="30"/>
+        <image name="profile.png" width="14" height="16"/>
+        <image name="recipes.png" width="26" height="32"/>
+    </resources>
     <color key="tintColor" red="0.61927972274282661" green="0.74350477860492692" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
