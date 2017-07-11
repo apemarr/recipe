@@ -1,14 +1,14 @@
 //
-//  IngredientViewController.swift
+//  CookingViewController.swift
 //  Recetas
 //
-//  Created by Alumno on 6/7/17.
+//  Created by Alumno on 11/7/17.
 //  Copyright © 2017 Marcin Adamczyk. All rights reserved.
 //
 
 import UIKit
 
-class IngredientViewController:UIViewController, UITableViewDelegate, UITableViewDataSource{
+class CookingViewController:UIViewController, UITableViewDelegate, UITableViewDataSource{
     @IBOutlet var tableView:UITableView!
     
     override func viewDidLoad() {
@@ -19,7 +19,7 @@ class IngredientViewController:UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = UIView()
-        view.backgroundColor = UIColor(red:0.52, green:0.90, blue:0.71, alpha:1.0)
+        view.backgroundColor = UIColor(red:0.52, green:0.71, blue:0.90, alpha:1.0)
         return view
     }
     
@@ -38,7 +38,7 @@ class IngredientViewController:UIViewController, UITableViewDelegate, UITableVie
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
         
-        return 8
+        return 3
     }
     
     func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
@@ -52,16 +52,18 @@ class IngredientViewController:UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 44.0
+        return 275
     }
     
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var ingredientes=["Aceite de Oliva","Arroz","Chocolate","Carne de ternera","Carne de cerdo","Queso Chedar","Queso Parmesano","Sal"]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ingredientCell") as! IngredientTableViewCell
-        cell.ingrediente?.text = ingredientes[indexPath.row]
+        var cocinas=["americana","griega","italiana"]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cookingCell") as! CookingTableViewCell
+        cell.cocina?.text = cocinas[indexPath.row]
+        let imageStr=String.init(format:"cook%lu.jpg", indexPath.row+1)
+        cell.imagenCocina?.image=UIImage.init(named:imageStr)
         return cell
         
     }
- 
+    
 }

@@ -9,5 +9,5 @@
 import UIKit
 
 class IngredientTableViewCell:UITableViewCell{
-    @IBOutlet var ingrediente:UILabel!
+    @IBOutlet var ingrediente:UILabel?
 }
