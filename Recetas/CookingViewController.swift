@@ -52,7 +52,7 @@ class CookingViewController:UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 275
+        return 245
     }
     
     func tableView(_ tableView: UITableView,
