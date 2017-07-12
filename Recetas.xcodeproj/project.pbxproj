@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		FB35E5291F0E915800984A08 /* IngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB35E5281F0E915800984A08 /* IngredientTableViewCell.swift */; };
 		FB35E52B1F0E9B1900984A08 /* IngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB35E52A1F0E9B1900984A08 /* IngredientViewController.swift */; };
+		FB3C8D161F1530E10063D6FB /* cooking.png in Resources */ = {isa = PBXBuildFile; fileRef = FB3C8D121F1530E10063D6FB /* cooking.png */; };
+		FB3C8D171F1530E10063D6FB /* ingredients.png in Resources */ = {isa = PBXBuildFile; fileRef = FB3C8D131F1530E10063D6FB /* ingredients.png */; };
+		FB3C8D181F1530E10063D6FB /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = FB3C8D141F1530E10063D6FB /* profile.png */; };
+		FB3C8D191F1530E10063D6FB /* recipes.png in Resources */ = {isa = PBXBuildFile; fileRef = FB3C8D151F1530E10063D6FB /* recipes.png */; };
+		FB3C8D1B1F15320C0063D6FB /* CookingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3C8D1A1F15320C0063D6FB /* CookingTableViewCell.swift */; };
+		FB3C8D1D1F15329B0063D6FB /* CookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3C8D1C1F15329B0063D6FB /* CookingViewController.swift */; };
+		FB3C8D211F1540910063D6FB /* cook1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB3C8D1E1F1540910063D6FB /* cook1.jpg */; };
+		FB3C8D221F1540910063D6FB /* cook2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB3C8D1F1F1540910063D6FB /* cook2.jpg */; };
+		FB3C8D231F1540910063D6FB /* cook3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB3C8D201F1540910063D6FB /* cook3.jpg */; };
 		FBF2DB1F1F0505F900EA3622 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF2DB1E1F0505F900EA3622 /* AppDelegate.swift */; };
 		FBF2DB211F0505F900EA3622 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF2DB201F0505F900EA3622 /* ViewController.swift */; };
 		FBF2DB241F0505F900EA3622 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF2DB221F0505F900EA3622 /* Main.storyboard */; };
@@ -51,6 +60,15 @@
 /* Begin PBXFileReference section */
 		FB35E5281F0E915800984A08 /* IngredientTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientTableViewCell.swift; sourceTree = "<group>"; };
 		FB35E52A1F0E9B1900984A08 /* IngredientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientViewController.swift; sourceTree = "<group>"; };
+		FB3C8D121F1530E10063D6FB /* cooking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cooking.png; sourceTree = "<group>"; };
+		FB3C8D131F1530E10063D6FB /* ingredients.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ingredients.png; sourceTree = "<group>"; };
+		FB3C8D141F1530E10063D6FB /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		FB3C8D151F1530E10063D6FB /* recipes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recipes.png; sourceTree = "<group>"; };
+		FB3C8D1A1F15320C0063D6FB /* CookingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookingTableViewCell.swift; sourceTree = "<group>"; };
+		FB3C8D1C1F15329B0063D6FB /* CookingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookingViewController.swift; sourceTree = "<group>"; };
+		FB3C8D1E1F1540910063D6FB /* cook1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cook1.jpg; sourceTree = "<group>"; };
+		FB3C8D1F1F1540910063D6FB /* cook2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cook2.jpg; sourceTree = "<group>"; };
+		FB3C8D201F1540910063D6FB /* cook3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cook3.jpg; sourceTree = "<group>"; };
 		FBF2DB1B1F0505F900EA3622 /* Recetas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recetas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF2DB1E1F0505F900EA3622 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBF2DB201F0505F900EA3622 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +149,7 @@
 				FBF2DB1E1F0505F900EA3622 /* AppDelegate.swift */,
 				FBF2DB201F0505F900EA3622 /* ViewController.swift */,
 				FB35E52A1F0E9B1900984A08 /* IngredientViewController.swift */,
+				FB3C8D1C1F15329B0063D6FB /* CookingViewController.swift */,
 				FBF2DB221F0505F900EA3622 /* Main.storyboard */,
 				FBF2DB281F0505FA00EA3622 /* Assets.xcassets */,
 				FBF2DB2A1F0505FA00EA3622 /* LaunchScreen.storyboard */,
@@ -139,6 +158,7 @@
 				FBF2DB4F1F050B7E00EA3622 /* Recetas.swift */,
 				FBF2DB511F051BAD00EA3622 /* RecipeTableViewCell.swift */,
 				FB35E5281F0E915800984A08 /* IngredientTableViewCell.swift */,
+				FB3C8D1A1F15320C0063D6FB /* CookingTableViewCell.swift */,
 			);
 			path = Recetas;
 			sourceTree = "<group>";
@@ -164,6 +184,13 @@
 		FBF2DB531F0522CC00EA3622 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				FB3C8D1E1F1540910063D6FB /* cook1.jpg */,
+				FB3C8D1F1F1540910063D6FB /* cook2.jpg */,
+				FB3C8D201F1540910063D6FB /* cook3.jpg */,
+				FB3C8D121F1530E10063D6FB /* cooking.png */,
+				FB3C8D131F1530E10063D6FB /* ingredients.png */,
+				FB3C8D141F1530E10063D6FB /* profile.png */,
+				FB3C8D151F1530E10063D6FB /* recipes.png */,
 				FBF2DB581F0522EF00EA3622 /* food5.jpg */,
 				FBF2DB571F0522EF00EA3622 /* food4.jpg */,
 				FBF2DB561F0522EF00EA3622 /* food3.jpg */,
@@ -285,12 +312,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB3C8D161F1530E10063D6FB /* cooking.png in Resources */,
 				FBF2DB2C1F0505FA00EA3622 /* LaunchScreen.storyboard in Resources */,
 				FBF2DB641F052AF200EA3622 /* dessert2.jpg in Resources */,
+				FB3C8D231F1540910063D6FB /* cook3.jpg in Resources */,
+				FB3C8D171F1530E10063D6FB /* ingredients.png in Resources */,
+				FB3C8D191F1530E10063D6FB /* recipes.png in Resources */,
 				FBF2DB5A1F0522EF00EA3622 /* food2.jpg in Resources */,
 				FBF2DB591F0522EF00EA3622 /* food1.jpg in Resources */,
 				FBF2DB631F052AF200EA3622 /* dessert1.jpg in Resources */,
 				FBF2DB5B1F0522EF00EA3622 /* food3.jpg in Resources */,
+				FB3C8D211F1540910063D6FB /* cook1.jpg in Resources */,
+				FB3C8D221F1540910063D6FB /* cook2.jpg in Resources */,
 				FBF2DB291F0505FA00EA3622 /* Assets.xcassets in Resources */,
 				FBF2DB5D1F0522EF00EA3622 /* food5.jpg in Resources */,
 				FBF2DB241F0505F900EA3622 /* Main.storyboard in Resources */,
@@ -298,6 +331,7 @@
 				FBF2DB671F052AF200EA3622 /* dessert5.jpg in Resources */,
 				FBF2DB5C1F0522EF00EA3622 /* food4.jpg in Resources */,
 				FBF2DB651F052AF200EA3622 /* dessert3.jpg in Resources */,
+				FB3C8D181F1530E10063D6FB /* profile.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,10 +358,12 @@
 			files = (
 				FB35E52B1F0E9B1900984A08 /* IngredientViewController.swift in Sources */,
 				FBF2DB211F0505F900EA3622 /* ViewController.swift in Sources */,
+				FB3C8D1B1F15320C0063D6FB /* CookingTableViewCell.swift in Sources */,
 				FBF2DB501F050B7E00EA3622 /* Recetas.swift in Sources */,
 				FB35E5291F0E915800984A08 /* IngredientTableViewCell.swift in Sources */,
 				FBF2DB521F051BAD00EA3622 /* RecipeTableViewCell.swift in Sources */,
 				FBF2DB271F0505FA00EA3622 /* Recetas.xcdatamodeld in Sources */,
+				FB3C8D1D1F15329B0063D6FB /* CookingViewController.swift in Sources */,
 				FBF2DB1F1F0505F900EA3622 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
