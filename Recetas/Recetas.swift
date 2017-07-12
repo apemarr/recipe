@@ -8,8 +8,9 @@
 
 import Foundation
 class Receta{
-    var nombre:String=""
+    var titulo:[String]=[]
+    var autor:String="yo"
     var ingredientes:[String]=[]
-    var descripcion:String=""
-    var autor:String=""
+    var preparacion:[String]=[]
+    
 }
