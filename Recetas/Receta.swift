@@ -7,10 +7,10 @@
 //
 
 import Foundation
-class Receta{
-    var titulo:[String]=[]
-    var autor:String="yo"
-    var ingredientes:[String]=[]
-    var preparacion:[String]=[]
+struct Receta {
+    var titulo: String = ""
     
-}
+    var autor: String = ""
+    var ingrediente: String = ""
+    var preparacion: String = ""
+    }
