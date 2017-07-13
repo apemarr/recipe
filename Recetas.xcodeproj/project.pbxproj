@@ -162,11 +162,11 @@
 				FBF2DB2A1F0505FA00EA3622 /* LaunchScreen.storyboard */,
 				FBF2DB2D1F0505FA00EA3622 /* Info.plist */,
 				FBF2DB251F0505FA00EA3622 /* Recetas.xcdatamodeld */,
+				FB3B15B01F1778E900A8FB4E /* DataController.swift */,
 				FBF2DB4F1F050B7E00EA3622 /* Receta.swift */,
 				FBF2DB511F051BAD00EA3622 /* RecipeTableViewCell.swift */,
 				FB35E5281F0E915800984A08 /* IngredientTableViewCell.swift */,
 				FB3C8D1A1F15320C0063D6FB /* CookingTableViewCell.swift */,
-				FB3B15B01F1778E900A8FB4E /* DataController.swift */,
 				FB3B15B41F179B7D00A8FB4E /* DetailTableViewCell.swift */,
 			);
 			path = Recetas;

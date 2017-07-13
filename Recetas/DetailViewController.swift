@@ -61,6 +61,9 @@ class DetailViewController:UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "detailCell") as! DetailTableViewCell
+        cell.titulo?.text=receta?.titulo
+        //cell.imagen?.image=UIImage.init(named:receta?.imagen)
+        //cell.imagen?.image=UIImage(named:receta?.imagen)
         return cell
         
     }

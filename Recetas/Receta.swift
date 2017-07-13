@@ -9,8 +9,8 @@
 import Foundation
 struct Receta {
     var titulo: String = ""
-    
     var autor: String = ""
     var ingrediente: String = ""
     var preparacion: String = ""
-    }
+    var imagen: String = ""
+}
