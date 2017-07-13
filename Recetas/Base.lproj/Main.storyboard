@@ -85,6 +85,7 @@
                     <connections>
                         <outlet property="searchDisplayController" destination="FhN-Zc-EwR" id="NEf-xv-wO6"/>
                         <outlet property="tableView" destination="wmx-yg-MEX" id="d4O-E7-0ch"/>
+                        <segue destination="Agu-5R-Icx" kind="show" identifier="detailrecipe" id="XTU-R4-xqY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -99,6 +100,44 @@
                 </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="956" y="-1549.4752623688157"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="kIs-kF-Eqt">
+            <objects>
+                <viewController id="Agu-5R-Icx" customClass="DetailViewController" customModule="Recetas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hFz-sT-lT8"/>
+                        <viewControllerLayoutGuide type="bottom" id="O83-HK-ScV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4oK-dz-R4g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RU0-6c-T3N">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="detailCell" id="HXR-OY-MP7" customClass="DetailTableViewCell" customModule="Recetas" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HXR-OY-MP7" id="7cz-ti-iGX">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="RU0-6c-T3N" id="ohy-e9-lNT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9tt-2z-OZO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2037.5999999999999" y="-1297.6011994002999"/>
         </scene>
         <!--Añadir receta-->
         <scene sceneID="7hK-lg-9kw">

@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     @IBOutlet var tableView:UITableView!
-   
+    var valuetoPass:String!
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -39,8 +39,33 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return 56
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let indexPath=tableView.indexPathForSelectedRow!
+        let currentCell=tableView.cellForRow(at: indexPath)! as UITableViewCell
+        valuetoPass=currentCell.textLabel?.text
+        performSegue(withIdentifier: "detailrecipe", sender: self)
+        
+    }
     
-    
+    func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if (segue.identifier=="detailrecipe"){
+            
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                
+                let receta = DataController.shareController.recetaList[indexPath.row]
+                
+                /*
+                if indexPath.section==1{
+                let receta = DataController.shareController.postreList[indexPath.row]
+                }
+                */
+                var viewController=segue.destination as! DetailViewController
+                viewController.receta = receta
+                //viewController.passedValue = valuetoPass
+            }
+        }
+    }
     
     // MARK: - UITableViewDataSource
     
