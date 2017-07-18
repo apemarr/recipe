@@ -41,7 +41,7 @@ class DetailViewController:UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
         
-        return 5
+        return 1
     }
     
     func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
@@ -55,15 +55,18 @@ class DetailViewController:UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 44.0
+        return 539
     }
     
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "detailCell") as! DetailTableViewCell
         cell.titulo?.text=receta?.titulo
-        //cell.imagen?.image=UIImage.init(named:receta?.imagen)
-        //cell.imagen?.image=UIImage(named:receta?.imagen)
+        if let image=receta?.imagen{
+            cell.imagen?.image=UIImage.init(named:image)
+        }
+        cell.ingredientes?.text=receta?.ingrediente
+        cell.preparacion?.text=receta?.preparacion
         return cell
         
     }

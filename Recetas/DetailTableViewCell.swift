@@ -11,4 +11,6 @@ import UIKit
 class DetailTableViewCell:UITableViewCell{
     @IBOutlet var titulo:UILabel?
     @IBOutlet var imagen:UIImageView?
+    @IBOutlet var ingredientes:UITextView?
+    @IBOutlet var preparacion:UITextView?
 }
