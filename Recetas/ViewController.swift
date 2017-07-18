@@ -10,27 +10,19 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     @IBOutlet var tableView:UITableView!
-   
+    var valuetoPass:String!
     override func viewDidLoad() {
         
         super.viewDidLoad()
         self.tableView.delegate   = self
         self.tableView.dataSource = self
-        let tortilla=Receta()
-        var titulo=tortilla.nombre
-        var ingredientes=tortilla.ingredientes
-        var descripcion=tortilla.descripcion
-        var autor=tortilla.autor
-        ingredientes+=["papas","cebollas","aceite","sal"]
-        
-        
         
         // Do any additional setup after loading the view, typically from a nib.
     }
     //CABECERA
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = UIView()
-        view.backgroundColor = UIColor.red
+        view.backgroundColor = UIColor(red:1.00, green:0.84, blue:0.00, alpha:1.0)
         
         let label = UILabel.init(frame: CGRect.init(x: 20, y: 10, width: UIScreen.main.bounds.width - 20, height: 56))
         if section==0{
@@ -47,8 +39,32 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return 56
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let indexPath=tableView.indexPathForSelectedRow!
+        let currentCell=tableView.cellForRow(at: indexPath)! as UITableViewCell
+        valuetoPass=currentCell.textLabel?.text
+        performSegue(withIdentifier: "detailrecipe", sender: self)
+        
+    }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        
+        if (segue.identifier=="detailrecipe"){
+            
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                var receta:Receta?
+                if indexPath.section==0{
+                 receta = DataController.shareController.recetaList[indexPath.row]
+                }
+                if indexPath.section==1{
+                    receta = DataController.shareController.postreList[indexPath.row]
+                }
+                let viewController=segue.destination as! DetailViewController
+                viewController.receta = receta
+                
+            }
+        }
+    }
     
     // MARK: - UITableViewDataSource
     
@@ -67,22 +83,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var platos=["tortilla de papas","cordero","papas fritas con huevo","paella","spaghetti"]
-        var postres=["tocinillo","cupcake","batido de fresa","tiramisu","mus de chocolate"]
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "recipeCell") as! RecipeTableViewCell
         if indexPath.section==0{
-        let imageStr=String.init(format:"food%lu.jpg", indexPath.row+1)
-        cell.imagenView?.image=UIImage.init(named:imageStr)
-        cell.titleRecipe?.text = platos[indexPath.row]
-        cell.autor?.text="autor"
+        //let imageStr=String.init(format:"food%lu.jpg", indexPath.row+1)
+        cell.imagenView?.image=UIImage.init(named:DataController.shareController.recetaList[indexPath.row].imagen)
+        cell.titleRecipe?.text = DataController.shareController.recetaList[indexPath.row].titulo
+        cell.autor?.text=DataController.shareController.recetaList[indexPath.row].autor
         
         }
         if indexPath.section==1{
-            let imageStr=String.init(format:"dessert%lu.jpg", indexPath.row+1)
-            cell.imagenView?.image=UIImage.init(named:imageStr)
-            cell.titleRecipe?.text = postres[indexPath.row]
-            cell.autor?.text="autor"
+            //let imageStr=String.init(format:"dessert%lu.jpg", indexPath.row+1)
+            cell.imagenView?.image=UIImage.init(named:DataController.shareController.postreList[indexPath.row].imagen)
+            cell.titleRecipe?.text = DataController.shareController.postreList[indexPath.row].titulo
+            cell.autor?.text=DataController.shareController.postreList[indexPath.row].autor
             
         }
         return cell
