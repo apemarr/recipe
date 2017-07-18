@@ -10,11 +10,16 @@ import UIKit
 
 class IngredientViewController:UIViewController, UITableViewDelegate, UITableViewDataSource{
     @IBOutlet var tableView:UITableView!
+    @IBOutlet weak var searchBar:UISearchBar!
+    
+    var searchActive : Bool = false
+    var filtered:[String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.delegate   = self
         self.tableView.dataSource = self
+        searchBar.delegate = self as! UISearchBarDelegate
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -60,7 +65,27 @@ class IngredientViewController:UIViewController, UITableViewDelegate, UITableVie
         var ingredientes=["Aceite de Oliva","Arroz","Chocolate","Carne de ternera","Carne de cerdo","Queso Chedar","Queso Parmesano","Sal"]
         let cell = tableView.dequeueReusableCell(withIdentifier: "ingredientCell") as! IngredientTableViewCell
         cell.ingrediente?.text = ingredientes[indexPath.row]
+        
         return cell
+        
+    }
+    func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
+        searchActive = true;
+    }
+    
+    func searchBarTextDidEndEditing(searchBar: UISearchBar) {
+        searchActive = false;
+    }
+    
+    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+        searchActive = false;
+    }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        searchActive = false;
+    }
+    func searchBar(_ searchBar: UISearchBar,
+                            textDidChange searchText: String){
         
     }
  
