@@ -8,18 +8,21 @@
 
 import UIKit
 
-class IngredientViewController:UIViewController, UITableViewDelegate, UITableViewDataSource{
+class IngredientViewController:UIViewController, UITableViewDelegate, UITableViewDataSource,UISearchBarDelegate{
     @IBOutlet var tableView:UITableView!
     @IBOutlet weak var searchBar:UISearchBar!
     
     var searchActive : Bool = false
-    var filtered:[String] = []
+    var filtered:[String]!
+    var ingredientes=["Aceite de Oliva","Arroz","Chocolate","Carne de ternera","Carne de cerdo","Queso Chedar","Queso Parmesano","Sal"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.delegate   = self
         self.tableView.dataSource = self
-        searchBar.delegate = self as! UISearchBarDelegate
+        searchBar.delegate = self
+        filtered=ingredientes
+        
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -43,7 +46,7 @@ class IngredientViewController:UIViewController, UITableViewDelegate, UITableVie
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
         
-        return 8
+        return filtered.count
     }
     
     func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
@@ -62,31 +65,28 @@ class IngredientViewController:UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var ingredientes=["Aceite de Oliva","Arroz","Chocolate","Carne de ternera","Carne de cerdo","Queso Chedar","Queso Parmesano","Sal"]
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "ingredientCell") as! IngredientTableViewCell
-        cell.ingrediente?.text = ingredientes[indexPath.row]
+        cell.ingrediente?.text = filtered[indexPath.row]
         
         return cell
         
     }
-    func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
-        searchActive = true;
-    }
-    
-    func searchBarTextDidEndEditing(searchBar: UISearchBar) {
-        searchActive = false;
-    }
-    
-    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
-        searchActive = false;
-    }
-    
-    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
-        searchActive = false;
-    }
     func searchBar(_ searchBar: UISearchBar,
                             textDidChange searchText: String){
+        // When there is no text, filteredData is the same as the original data
+        // When user has entered text into the search box
+        // Use the filter method to iterate over all items in the data array
+        // For each item, return true if the item should be included and false if the
+        // item should NOT be included
+        filtered = searchText.isEmpty ? ingredientes : ingredientes.filter { (item: String) -> Bool in
+            // If dataItem matches the searchText, return true to include it
+            return item.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
+        }
         
+        tableView.reloadData()
     }
- 
+    
 }
+ 
+

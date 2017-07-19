@@ -577,7 +577,6 @@
                                             <color key="tintColor" red="0.78434719860442503" green="1" blue="0.76325046570212873" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="busqueda" destination="uko-N0-UlU" id="Fc5-PI-m7K"/>
                                             <outlet property="ingrediente" destination="F3k-z2-gTn" id="ir7-qM-bV6"/>
                                         </connections>
                                     </tableViewCell>
@@ -589,6 +588,7 @@
                     <tabBarItem key="tabBarItem" title="Ingredientes" image="ingredients.png" id="S6g-2h-scN"/>
                     <navigationItem key="navigationItem" title="Ingredientes" id="z47-ga-ULa"/>
                     <connections>
+                        <outlet property="searchBar" destination="uko-N0-UlU" id="3Xk-Zi-1CZ"/>
                         <outlet property="tableView" destination="y93-SY-nTJ" id="JE3-XK-K5j"/>
                     </connections>
                 </viewController>
