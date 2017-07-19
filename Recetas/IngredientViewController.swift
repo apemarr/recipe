@@ -11,10 +11,11 @@ import UIKit
 class IngredientViewController:UIViewController, UITableViewDelegate, UITableViewDataSource,UISearchBarDelegate{
     @IBOutlet var tableView:UITableView!
     @IBOutlet weak var searchBar:UISearchBar!
+    var valuetoPass:String!
     
-    var searchActive : Bool = false
+    
     var filtered:[String]!
-    var ingredientes=["Aceite de Oliva","Arroz","Chocolate","Carne de ternera","Carne de cerdo","Queso Chedar","Queso Parmesano","Sal"]
+    var ingredientes=["Aceite de Oliva","Aceite de soja","Aceite de maiz","Yogur","Champiñones","Setas","Lentejas","Garbanzos","Lechuga","Alcachofa","Acelga","Brecol","Calabaza","Calabacin","Batata","Berro","Brocoli","Cebolla","Judias","Guisantes","Coliflor","Escarola","Arroz","Chocolate","Carne de ternera","Carne de cerdo","Carne de cabra","Carne de vaca","Carne de oveja","Melon","Sandia","Kiwi","Galleta","Limon","Naranja","Platano","Pan","Atun","Anchoa","Calamar","Gamba","Langostino","Pulpo","Cangrejo","Langosta","Mejillon","Camaron","Almeja","Percebe","Sepia","Ostra","Cigala","Bacalao","Bonito","Boqueron","Caballa","Dorada","Lenguado","Merluza","Lubina","Salmon","Sardina","Trucha","Queso Chedar","Queso Parmesano","Sal","Fresa","Harina","Papas","Pimiento verde","Pimiento rojo","Pimienta"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,10 +37,18 @@ class IngredientViewController:UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        
+        let indexPath=tableView.indexPathForSelectedRow!
+        let currentCell=tableView.cellForRow(at: indexPath)! as UITableViewCell
+        valuetoPass=currentCell.textLabel?.text
+        performSegue(withIdentifier: "detailingredient", sender: self)
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+    /*
+        if (segue.identifier=="detailingredient"){
+        var receta:Receta?
+        if let search=receta?.ingrediente.range(of: self.)
+        }*/
+    }
     
     // MARK: - UITableViewDataSource
     
