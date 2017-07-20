@@ -38,16 +38,18 @@ class IngredientViewController:UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let indexPath=tableView.indexPathForSelectedRow!
-        let currentCell=tableView.cellForRow(at: indexPath)! as UITableViewCell
-        valuetoPass=currentCell.textLabel?.text
+        if let currentCell=tableView.cellForRow(at: indexPath)! as? IngredientTableViewCell {
+        valuetoPass=currentCell.ingrediente?.text
         performSegue(withIdentifier: "detailingredient", sender: self)
+        }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-    /*
+    
         if (segue.identifier=="detailingredient"){
-        var receta:Receta?
-        if let search=receta?.ingrediente.range(of: self.)
-        }*/
+            if let ingredientdetailVC=segue.destination as? IngredientDetailViewController{
+                ingredientdetailVC.passedValue=valuetoPass
+            }
+        }
     }
     
     // MARK: - UITableViewDataSource

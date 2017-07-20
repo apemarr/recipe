@@ -11,10 +11,24 @@ class IngredientDetailViewController:UIViewController, UITableViewDelegate, UITa
     @IBOutlet var tableView:UITableView!
     var passedValue:String!
     var receta:Receta?
-    
+    var arrayingrediente:[Receta]=[]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        for item in DataController.shareController.recetaList{
+            if item.ingrediente.lowercased().contains(passedValue.lowercased()){
+                arrayingrediente.append(item)
+            }
+        }
+        /*
+        var recipes = "dsakdklsaj dklajs dklajs dkljas ldkj"
+        var recipeSelected = "dsjahdjk"
+        
+        if recipes.lowercased().contains(recipeSelected.lowercased()) == true {
+            
+        }
+        */
         self.tableView.delegate   = self
         self.tableView.dataSource = self
     }
@@ -59,13 +73,10 @@ class IngredientDetailViewController:UIViewController, UITableViewDelegate, UITa
     
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "idetailCell") as! IDetailTableViewCell
-        cell.titulo?.text=receta?.titulo
-        if let image=receta?.imagen{
-            cell.imagen?.image=UIImage.init(named:image)
-        }
-        return cell
         
+        let cell = tableView.dequeueReusableCell(withIdentifier: "idetailCell") as! IDetailTableViewCell
+        //cell.titulo?.text=arrayingrediente[titulo]
+        return cell
     }
     
 }

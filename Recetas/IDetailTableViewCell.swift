@@ -12,4 +12,5 @@ import UIKit
 class IDetailTableViewCell:UITableViewCell{
     @IBOutlet var titulo:UILabel?
     @IBOutlet var imagen:UIImageView?
+    @IBOutlet var autor:UILabel?
 }

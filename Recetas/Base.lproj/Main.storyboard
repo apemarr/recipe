@@ -614,7 +614,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idetailCell" rowHeight="194" id="RNV-Ey-uXv">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idetailCell" rowHeight="194" id="RNV-Ey-uXv" customClass="IDetailTableViewCell" customModule="Recetas" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="194"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RNV-Ey-uXv" id="EM2-8p-FcT">
@@ -641,12 +641,20 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="autor" destination="obl-xM-pP6" id="yCM-qi-lus"/>
+                                            <outlet property="imagen" destination="r0u-RK-U9j" id="Bnr-QM-8O9"/>
+                                            <outlet property="titulo" destination="j8j-HM-343" id="E8s-YG-1Dr"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="anb-4H-Fut" id="Q8L-77-otG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TMv-HA-voF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
