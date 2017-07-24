@@ -99,7 +99,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="956" y="-1549.4752623688157"/>
+            <point key="canvasLocation" x="903" y="-1298"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="kIs-kF-Eqt">
@@ -170,7 +170,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9tt-2z-OZO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2037.5999999999999" y="-1297.6011994002999"/>
+            <point key="canvasLocation" x="1958" y="-817"/>
         </scene>
         <!--Añadir receta-->
         <scene sceneID="7hK-lg-9kw">
@@ -268,7 +268,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GYW-5j-uoi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2076" y="-1975.8620689655174"/>
+            <point key="canvasLocation" x="1958" y="-1549"/>
         </scene>
         <!--Settings-->
         <scene sceneID="Uxf-xK-3XF">
@@ -385,7 +385,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oCf-ko-dhk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-671.20000000000005" y="-3055.3223388305851"/>
+            <point key="canvasLocation" x="-3183" y="-1549"/>
         </scene>
         <!--Perfil-->
         <scene sceneID="cDS-DB-CSh">
@@ -402,7 +402,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wpw-zn-bSc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-671" y="-2307"/>
+            <point key="canvasLocation" x="-2287" y="-1549"/>
         </scene>
         <!--Recetas-->
         <scene sceneID="848-nd-0Mg">
@@ -533,7 +533,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sjw-yi-jyA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1898.4000000000001" y="-7.6461769115442282"/>
+            <point key="canvasLocation" x="-1898" y="-60"/>
         </scene>
         <!--Ingredientes-->
         <scene sceneID="XW3-98-mPy">
@@ -593,7 +593,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8lJ-eV-p6j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-522.39999999999998" y="7.6461769115442282"/>
+            <point key="canvasLocation" x="-522" y="-59"/>
         </scene>
         <!--Ingredient Detail View Controller-->
         <scene sceneID="van-fM-Frk">
@@ -656,7 +656,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TMv-HA-voF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1180" y="10.344827586206897"/>
+            <point key="canvasLocation" x="734" y="-17"/>
         </scene>
     </scenes>
     <resources>
