@@ -21,14 +21,11 @@ class IngredientDetailViewController:UIViewController, UITableViewDelegate, UITa
                 arrayingrediente.append(item)
             }
         }
-        /*
-        var recipes = "dsakdklsaj dklajs dklajs dkljas ldkj"
-        var recipeSelected = "dsjahdjk"
-        
-        if recipes.lowercased().contains(recipeSelected.lowercased()) == true {
-            
+        for item2 in DataController.shareController.postreList{
+            if item2.ingrediente.lowercased().contains(passedValue.lowercased()){
+                arrayingrediente.append(item2)
+            }
         }
-        */
         self.tableView.delegate   = self
         self.tableView.dataSource = self
     }
@@ -75,7 +72,15 @@ class IngredientDetailViewController:UIViewController, UITableViewDelegate, UITa
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "idetailCell") as! IDetailTableViewCell
-        //cell.titulo?.text=arrayingrediente[titulo]
+        if arrayingrediente.isEmpty{
+            cell.titulo?.text=""
+            cell.imagen?.image=UIImage.init(named:"")
+            cell.autor?.text=""
+        }else{
+        cell.titulo?.text=arrayingrediente[indexPath.row].titulo
+        cell.imagen?.image=UIImage.init(named:arrayingrediente[indexPath.row].imagen)
+        cell.autor?.text=arrayingrediente[indexPath.row].autor
+        }
         return cell
     }
     
