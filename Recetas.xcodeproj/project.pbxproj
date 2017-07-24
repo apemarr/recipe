@@ -23,6 +23,9 @@
 		FB3C8D231F1540910063D6FB /* cook3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB3C8D201F1540910063D6FB /* cook3.jpg */; };
 		FBB38C0B1F168F69009FF859 /* food3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBB38C0A1F168F69009FF859 /* food3.jpg */; };
 		FBB38C0D1F169A15009FF859 /* food5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBB38C0C1F169A15009FF859 /* food5.jpg */; };
+		FBB73CAE1F2656DE00F01364 /* cameraicon.png in Resources */ = {isa = PBXBuildFile; fileRef = FBB73CAD1F2656DE00F01364 /* cameraicon.png */; };
+		FBCB4D7D1F1FC72100415A42 /* IngredientDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCB4D7C1F1FC72100415A42 /* IngredientDetailViewController.swift */; };
+		FBCB4D7F1F1FC9A300415A42 /* IDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCB4D7E1F1FC9A300415A42 /* IDetailTableViewCell.swift */; };
 		FBF2DB1F1F0505F900EA3622 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF2DB1E1F0505F900EA3622 /* AppDelegate.swift */; };
 		FBF2DB211F0505F900EA3622 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF2DB201F0505F900EA3622 /* ViewController.swift */; };
 		FBF2DB241F0505F900EA3622 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF2DB221F0505F900EA3622 /* Main.storyboard */; };
@@ -77,6 +80,9 @@
 		FB3C8D201F1540910063D6FB /* cook3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cook3.jpg; sourceTree = "<group>"; };
 		FBB38C0A1F168F69009FF859 /* food3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food3.jpg; sourceTree = "<group>"; };
 		FBB38C0C1F169A15009FF859 /* food5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food5.jpg; sourceTree = "<group>"; };
+		FBB73CAD1F2656DE00F01364 /* cameraicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraicon.png; sourceTree = "<group>"; };
+		FBCB4D7C1F1FC72100415A42 /* IngredientDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientDetailViewController.swift; sourceTree = "<group>"; };
+		FBCB4D7E1F1FC9A300415A42 /* IDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDetailTableViewCell.swift; sourceTree = "<group>"; };
 		FBF2DB1B1F0505F900EA3622 /* Recetas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recetas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF2DB1E1F0505F900EA3622 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBF2DB201F0505F900EA3622 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +163,7 @@
 				FB35E52A1F0E9B1900984A08 /* IngredientViewController.swift */,
 				FB3C8D1C1F15329B0063D6FB /* CookingViewController.swift */,
 				FB3B15B21F179A2400A8FB4E /* DetailViewController.swift */,
+				FBCB4D7C1F1FC72100415A42 /* IngredientDetailViewController.swift */,
 				FBF2DB221F0505F900EA3622 /* Main.storyboard */,
 				FBF2DB281F0505FA00EA3622 /* Assets.xcassets */,
 				FBF2DB2A1F0505FA00EA3622 /* LaunchScreen.storyboard */,
@@ -168,6 +175,7 @@
 				FB35E5281F0E915800984A08 /* IngredientTableViewCell.swift */,
 				FB3C8D1A1F15320C0063D6FB /* CookingTableViewCell.swift */,
 				FB3B15B41F179B7D00A8FB4E /* DetailTableViewCell.swift */,
+				FBCB4D7E1F1FC9A300415A42 /* IDetailTableViewCell.swift */,
 			);
 			path = Recetas;
 			sourceTree = "<group>";
@@ -193,6 +201,7 @@
 		FBF2DB531F0522CC00EA3622 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				FBB73CAD1F2656DE00F01364 /* cameraicon.png */,
 				FB3C8D1E1F1540910063D6FB /* cook1.jpg */,
 				FB3C8D1F1F1540910063D6FB /* cook2.jpg */,
 				FB3C8D201F1540910063D6FB /* cook3.jpg */,
@@ -334,6 +343,7 @@
 				FB3C8D211F1540910063D6FB /* cook1.jpg in Resources */,
 				FB3C8D221F1540910063D6FB /* cook2.jpg in Resources */,
 				FBF2DB291F0505FA00EA3622 /* Assets.xcassets in Resources */,
+				FBB73CAE1F2656DE00F01364 /* cameraicon.png in Resources */,
 				FBF2DB241F0505F900EA3622 /* Main.storyboard in Resources */,
 				FBF2DB661F052AF200EA3622 /* dessert4.jpg in Resources */,
 				FBF2DB671F052AF200EA3622 /* dessert5.jpg in Resources */,
@@ -367,6 +377,7 @@
 			files = (
 				FB3B15B31F179A2400A8FB4E /* DetailViewController.swift in Sources */,
 				FB35E52B1F0E9B1900984A08 /* IngredientViewController.swift in Sources */,
+				FBCB4D7F1F1FC9A300415A42 /* IDetailTableViewCell.swift in Sources */,
 				FBF2DB211F0505F900EA3622 /* ViewController.swift in Sources */,
 				FB3C8D1B1F15320C0063D6FB /* CookingTableViewCell.swift in Sources */,
 				FB3B15B11F1778E900A8FB4E /* DataController.swift in Sources */,
@@ -374,6 +385,7 @@
 				FB3B15B51F179B7D00A8FB4E /* DetailTableViewCell.swift in Sources */,
 				FB35E5291F0E915800984A08 /* IngredientTableViewCell.swift in Sources */,
 				FBF2DB521F051BAD00EA3622 /* RecipeTableViewCell.swift in Sources */,
+				FBCB4D7D1F1FC72100415A42 /* IngredientDetailViewController.swift in Sources */,
 				FBF2DB271F0505FA00EA3622 /* Recetas.xcdatamodeld in Sources */,
 				FB3C8D1D1F15329B0063D6FB /* CookingViewController.swift in Sources */,
 				FBF2DB1F1F0505F900EA3622 /* AppDelegate.swift in Sources */,
