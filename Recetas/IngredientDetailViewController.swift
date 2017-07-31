@@ -51,7 +51,7 @@ class IngredientDetailViewController:UIViewController, UITableViewDelegate, UITa
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
         
-        return 1
+        return arrayingrediente.count
     }
     
     func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
@@ -65,7 +65,7 @@ class IngredientDetailViewController:UIViewController, UITableViewDelegate, UITa
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 539
+        return 194
     }
     
     func tableView(_ tableView: UITableView,
