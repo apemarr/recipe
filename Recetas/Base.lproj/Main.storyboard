@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="47G-oS-AnV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="47G-oS-AnV">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,7 +30,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="305"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Fy-DI-aaF" id="Rey-xS-jWJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="305"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="304.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="21f-Vk-91y">
@@ -135,7 +135,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="539"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HXR-OY-MP7" id="7cz-ti-iGX">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="539"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="538.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAM-Sq-QHV">
@@ -412,7 +412,7 @@
                 <navigationController id="UG5-Bp-ad0" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Perfil" image="profile.png" id="pIT-D9-PPJ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xFZ-xa-6zl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -429,7 +429,7 @@
                 <navigationController id="oU2-8P-Jyt" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Recetas" image="recipes.png" id="W2T-10-xgK"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sr4-S8-Svl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -446,7 +446,7 @@
                 <navigationController id="Kzf-hH-llh" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Ingredientes" image="ingredients.png" id="fGC-UN-0Zn"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="o38-7S-cRl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -485,7 +485,7 @@
                 <navigationController id="PRs-ul-ryt" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Cocina" image="cooking.png" id="jkZ-Eb-EbG"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uo6-EL-7nN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -508,16 +508,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="275" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jl9-Bh-MzN">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="275" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jl9-Bh-MzN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="657"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cookingCell" rowHeight="275" id="SqE-Fl-TDm" customClass="CookingTableViewCell" customModule="Recetas" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="275"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SqE-Fl-TDm" id="82a-Qv-XxY">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="275"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="274.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lGT-63-aMy">
@@ -543,6 +542,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.67520146205308673" green="0.72096310698817767" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Jl9-Bh-MzN" firstAttribute="top" secondItem="eCk-6Z-cBP" secondAttribute="top" id="HfA-Gw-Juy"/>
+                            <constraint firstAttribute="trailing" secondItem="Jl9-Bh-MzN" secondAttribute="trailing" id="HfH-Lw-UCT"/>
+                            <constraint firstAttribute="bottom" secondItem="Jl9-Bh-MzN" secondAttribute="bottom" constant="10" id="V0k-o2-4Y5"/>
+                            <constraint firstItem="Jl9-Bh-MzN" firstAttribute="leading" secondItem="eCk-6Z-cBP" secondAttribute="leading" id="sps-A8-kPw"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Cocina" image="cooking.png" id="hUD-mq-wYY"/>
                     <navigationItem key="navigationItem" title="Cocina" id="wmn-oZ-esK"/>
@@ -566,9 +571,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="y93-SY-nTJ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="38" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="y93-SY-nTJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="657"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <searchBar key="tableHeaderView" contentMode="redraw" id="uko-N0-UlU">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -576,11 +580,11 @@
                                     <textInputTraits key="textInputTraits"/>
                                 </searchBar>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ingredientCell" id="hei-Dd-fho" customClass="IngredientTableViewCell" customModule="Recetas" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ingredientCell" rowHeight="38" id="hei-Dd-fho" customClass="IngredientTableViewCell" customModule="Recetas" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="38"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hei-Dd-fho" id="b0a-vu-Cze">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="37.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3k-z2-gTn">
@@ -601,6 +605,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.47681519137627537" green="1" blue="0.73277602992149815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="y93-SY-nTJ" firstAttribute="leading" secondItem="VlK-Lv-ySg" secondAttribute="leading" id="AV3-NB-Jkh"/>
+                            <constraint firstAttribute="bottom" secondItem="y93-SY-nTJ" secondAttribute="bottom" constant="10" id="CuD-yH-cOI"/>
+                            <constraint firstAttribute="trailing" secondItem="y93-SY-nTJ" secondAttribute="trailing" id="EUt-sJ-biu"/>
+                            <constraint firstItem="y93-SY-nTJ" firstAttribute="top" secondItem="VlK-Lv-ySg" secondAttribute="top" id="NkN-5l-Ulr"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Ingredientes" image="ingredients.png" id="S6g-2h-scN"/>
                     <navigationItem key="navigationItem" title="Ingredientes" id="z47-ga-ULa"/>
@@ -612,7 +622,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8lJ-eV-p6j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-522" y="-59"/>
+            <point key="canvasLocation" x="-522.39999999999998" y="-59.820089955022496"/>
         </scene>
         <!--Ingredient Detail View Controller-->
         <scene sceneID="van-fM-Frk">
@@ -626,16 +636,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="194" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="anb-4H-Fut">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="194" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="anb-4H-Fut">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="657"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idetailCell" rowHeight="194" id="RNV-Ey-uXv" customClass="IDetailTableViewCell" customModule="Recetas" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="194"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RNV-Ey-uXv" id="EM2-8p-FcT">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="194"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="193.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8j-HM-343">
@@ -668,6 +677,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="anb-4H-Fut" firstAttribute="leading" secondItem="KFm-un-o2A" secondAttribute="leading" id="ZhH-fC-g7J"/>
+                            <constraint firstAttribute="trailing" secondItem="anb-4H-Fut" secondAttribute="trailing" id="bdK-4g-9VE"/>
+                            <constraint firstItem="anb-4H-Fut" firstAttribute="top" secondItem="KFm-un-o2A" secondAttribute="top" id="ezM-46-5IY"/>
+                            <constraint firstAttribute="bottom" secondItem="anb-4H-Fut" secondAttribute="bottom" constant="10" id="qzI-7m-IfA"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="anb-4H-Fut" id="Q8L-77-otG"/>
