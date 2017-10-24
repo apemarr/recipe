@@ -50,7 +50,7 @@ class IngredientDetailViewController:UIViewController, UITableViewDelegate, UITa
         if (segue.identifier=="idetailrecipe"){
             if let indexPath = self.tableView.indexPathForSelectedRow{
                 let viewController=segue.destination as! DetailViewController
-                viewController.arrayingrediente[indexPath.row]=arrayingrediente[indexPath.row]
+                viewController.arrayingrediente.append(arrayingrediente[indexPath.row])
             }
         }
     }
