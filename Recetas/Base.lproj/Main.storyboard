@@ -189,7 +189,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9tt-2z-OZO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1958" y="-817"/>
+            <point key="canvasLocation" x="1958" y="-699"/>
         </scene>
         <!--Añadir receta-->
         <scene sceneID="7hK-lg-9kw">
@@ -686,6 +686,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="anb-4H-Fut" id="Q8L-77-otG"/>
+                        <segue destination="Agu-5R-Icx" kind="show" identifier="idetailrecipe" id="SRp-qb-TfH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TMv-HA-voF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -700,5 +701,8 @@
         <image name="profile.png" width="14" height="16"/>
         <image name="recipes.png" width="26" height="32"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="SRp-qb-TfH"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.61927972274282661" green="0.74350477860492692" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

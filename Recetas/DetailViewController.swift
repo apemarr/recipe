@@ -12,8 +12,8 @@ class DetailViewController:UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet var tableView:UITableView!
     var passedValue:String!
     var receta:Receta?
-    
-    
+    var arrayingrediente:[Receta]=[]
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.delegate   = self
@@ -61,12 +61,20 @@ class DetailViewController:UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "detailCell") as! DetailTableViewCell
+        if arrayingrediente.isEmpty{
         cell.titulo?.text=receta?.titulo
         if let image=receta?.imagen{
             cell.imagen?.image=UIImage.init(named:image)
         }
         cell.ingredientes?.text=receta?.ingrediente
         cell.preparacion?.text=receta?.preparacion
+        }
+        else{
+            cell.titulo?.text=arrayingrediente[indexPath.row].titulo
+            cell.imagen?.image=UIImage.init(named:arrayingrediente[indexPath.row].imagen)
+            cell.ingredientes?.text=arrayingrediente[indexPath.row].ingrediente
+            cell.preparacion?.text=arrayingrediente[indexPath.row].preparacion
+        }
         return cell
         
     }

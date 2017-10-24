@@ -41,10 +41,19 @@ class IngredientDetailViewController:UIViewController, UITableViewDelegate, UITa
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        
+        let indexPath=tableView.indexPathForSelectedRow!
+        let currentCell=tableView.cellForRow(at: indexPath)! as UITableViewCell
+        performSegue(withIdentifier: "idetailrecipe", sender: self)
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        
+        if (segue.identifier=="idetailrecipe"){
+            if let indexPath = self.tableView.indexPathForSelectedRow{
+                let viewController=segue.destination as! DetailViewController
+                viewController.arrayingrediente[indexPath.row]=arrayingrediente[indexPath.row]
+            }
+        }
+    }
     
     // MARK: - UITableViewDataSource
     
@@ -83,7 +92,6 @@ class IngredientDetailViewController:UIViewController, UITableViewDelegate, UITa
         }
         return cell
     }
-    
 }
 
 
