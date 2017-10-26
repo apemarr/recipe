@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A7611F01FA20B5D0035539B /* Cocina.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7611EF1FA20B5D0035539B /* Cocina.swift */; };
+		3A7611F21FA212FD0035539B /* americana1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A7611F11FA212FC0035539B /* americana1.jpg */; };
 		FB35E5291F0E915800984A08 /* IngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB35E5281F0E915800984A08 /* IngredientTableViewCell.swift */; };
 		FB35E52B1F0E9B1900984A08 /* IngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB35E52A1F0E9B1900984A08 /* IngredientViewController.swift */; };
 		FB3B15B11F1778E900A8FB4E /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3B15B01F1778E900A8FB4E /* DataController.swift */; };
@@ -64,6 +66,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A7611EF1FA20B5D0035539B /* Cocina.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cocina.swift; sourceTree = "<group>"; };
+		3A7611F11FA212FC0035539B /* americana1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = americana1.jpg; sourceTree = SOURCE_ROOT; };
 		FB35E5281F0E915800984A08 /* IngredientTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientTableViewCell.swift; sourceTree = "<group>"; };
 		FB35E52A1F0E9B1900984A08 /* IngredientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientViewController.swift; sourceTree = "<group>"; };
 		FB3B15B01F1778E900A8FB4E /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 				FBF2DB251F0505FA00EA3622 /* Recetas.xcdatamodeld */,
 				FB3B15B01F1778E900A8FB4E /* DataController.swift */,
 				FBF2DB4F1F050B7E00EA3622 /* Receta.swift */,
+				3A7611EF1FA20B5D0035539B /* Cocina.swift */,
 				FBF2DB511F051BAD00EA3622 /* RecipeTableViewCell.swift */,
 				FB35E5281F0E915800984A08 /* IngredientTableViewCell.swift */,
 				FB3C8D1A1F15320C0063D6FB /* CookingTableViewCell.swift */,
@@ -201,6 +206,7 @@
 		FBF2DB531F0522CC00EA3622 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				3A7611F11FA212FC0035539B /* americana1.jpg */,
 				FBB73CAD1F2656DE00F01364 /* cameraicon.png */,
 				FB3C8D1E1F1540910063D6FB /* cook1.jpg */,
 				FB3C8D1F1F1540910063D6FB /* cook2.jpg */,
@@ -335,6 +341,7 @@
 				FBF2DB641F052AF200EA3622 /* dessert2.jpg in Resources */,
 				FB3C8D231F1540910063D6FB /* cook3.jpg in Resources */,
 				FB3C8D171F1530E10063D6FB /* ingredients.png in Resources */,
+				3A7611F21FA212FD0035539B /* americana1.jpg in Resources */,
 				FBB38C0D1F169A15009FF859 /* food5.jpg in Resources */,
 				FB3C8D191F1530E10063D6FB /* recipes.png in Resources */,
 				FBF2DB5A1F0522EF00EA3622 /* food2.jpg in Resources */,
@@ -384,6 +391,7 @@
 				FBF2DB501F050B7E00EA3622 /* Receta.swift in Sources */,
 				FB3B15B51F179B7D00A8FB4E /* DetailTableViewCell.swift in Sources */,
 				FB35E5291F0E915800984A08 /* IngredientTableViewCell.swift in Sources */,
+				3A7611F01FA20B5D0035539B /* Cocina.swift in Sources */,
 				FBF2DB521F051BAD00EA3622 /* RecipeTableViewCell.swift in Sources */,
 				FBCB4D7D1F1FC72100415A42 /* IngredientDetailViewController.swift in Sources */,
 				FBF2DB271F0505FA00EA3622 /* Recetas.xcdatamodeld in Sources */,

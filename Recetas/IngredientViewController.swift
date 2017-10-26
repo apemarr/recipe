@@ -15,14 +15,14 @@ class IngredientViewController:UIViewController, UITableViewDelegate, UITableVie
     
     
     var filtered:[String]!
-    var ingredientes=["Aceite de Oliva","Aceite de soja","Aceite de maiz","Yogur","Champiñones","Setas","Lentejas","Garbanzos","Lechuga","Alcachofa","Acelga","Brecol","Calabaza","Calabacin","Batata","Berro","Brocoli","Cebolla","Judias","Guisantes","Coliflor","Escarola","Arroz","Chocolate","Carne de ternera","Carne de cerdo","Carne de cabra","Carne de vaca","Carne de oveja","Melon","Sandia","Kiwi","Galleta","Limon","Naranja","Platano","Pan","Atun","Anchoa","Calamar","Gamba","Langostino","Pulpo","Cangrejo","Langosta","Mejillon","Camaron","Almeja","Percebe","Sepia","Ostra","Cigala","Bacalao","Bonito","Boqueron","Caballa","Dorada","Lenguado","Merluza","Lubina","Salmon","Sardina","Trucha","Queso Chedar","Queso Parmesano","Sal","Fresa","Harina","Papas","Pimiento verde","Pimiento rojo","Pimienta"]
+    var ingredientes=["Aceite de Oliva","Aceite de soja","Aceite de maiz","Yogur","Champiñones","Setas","Lentejas","Garbanzos","Lechuga","Alcachofa","Acelga","Brecol","Calabaza","Calabacin","Batata","Berro","Brocoli","Cebolla","Judias","Guisantes","Coliflor","Escarola","Arroz","Chocolate","Carne de ternera","Carne de cerdo","Carne de cabra","Carne de vaca","Carne de oveja","Melon","Sandia","Kiwi","Galleta","Limon","Naranja","Platano","Pan","Atun","Anchoa","Calamar","Gamba","Langostino","Pulpo","Cangrejo","Langosta","Mejillon","Mantequilla","Margarina","Camaron","Almeja","Percebe","Sepia","Ostra","Cigala","Bacalao","Bonito","Boqueron","Caballa","Dorada","Lenguado","Merluza","Lubina","Salmon","Sardina","Trucha","Queso Cheddar","Queso Parmesano","Queso azul","Sal","Fresa","Harina","Papa","Pimiento verde","Pimiento rojo","Pimienta"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.delegate   = self
         self.tableView.dataSource = self
         searchBar.delegate = self
-        filtered=ingredientes
+        filtered=ingredientes.sorted()
         
     }
     
@@ -90,7 +90,7 @@ class IngredientViewController:UIViewController, UITableViewDelegate, UITableVie
         // Use the filter method to iterate over all items in the data array
         // For each item, return true if the item should be included and false if the
         // item should NOT be included
-        filtered = searchText.isEmpty ? ingredientes : ingredientes.filter { (item: String) -> Bool in
+        filtered = searchText.isEmpty ? ingredientes.sorted() : ingredientes.filter { (item: String) -> Bool in
             // If dataItem matches the searchText, return true to include it
             return item.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
         }

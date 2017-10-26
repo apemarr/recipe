@@ -41,8 +41,6 @@ class IngredientDetailViewController:UIViewController, UITableViewDelegate, UITa
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let indexPath=tableView.indexPathForSelectedRow!
-        let currentCell=tableView.cellForRow(at: indexPath)! as UITableViewCell
         performSegue(withIdentifier: "idetailrecipe", sender: self)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
