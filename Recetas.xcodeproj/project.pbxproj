@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		3A7611F01FA20B5D0035539B /* Cocina.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7611EF1FA20B5D0035539B /* Cocina.swift */; };
 		3A7611F21FA212FD0035539B /* americana1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A7611F11FA212FC0035539B /* americana1.jpg */; };
+		3A7611F41FA21A9B0035539B /* griega1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A7611F31FA21A9A0035539B /* griega1.jpg */; };
+		3A7611F61FA21E250035539B /* italiana1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A7611F51FA21E250035539B /* italiana1.jpg */; };
+		3A7611F81FA22D190035539B /* CookingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7611F71FA22D190035539B /* CookingDetailViewController.swift */; };
+		3A7611FA1FA22E670035539B /* CDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7611F91FA22E670035539B /* CDetailTableViewCell.swift */; };
 		FB35E5291F0E915800984A08 /* IngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB35E5281F0E915800984A08 /* IngredientTableViewCell.swift */; };
 		FB35E52B1F0E9B1900984A08 /* IngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB35E52A1F0E9B1900984A08 /* IngredientViewController.swift */; };
 		FB3B15B11F1778E900A8FB4E /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3B15B01F1778E900A8FB4E /* DataController.swift */; };
@@ -68,6 +72,10 @@
 /* Begin PBXFileReference section */
 		3A7611EF1FA20B5D0035539B /* Cocina.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cocina.swift; sourceTree = "<group>"; };
 		3A7611F11FA212FC0035539B /* americana1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = americana1.jpg; sourceTree = SOURCE_ROOT; };
+		3A7611F31FA21A9A0035539B /* griega1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = griega1.jpg; sourceTree = SOURCE_ROOT; };
+		3A7611F51FA21E250035539B /* italiana1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = italiana1.jpg; sourceTree = SOURCE_ROOT; };
+		3A7611F71FA22D190035539B /* CookingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookingDetailViewController.swift; sourceTree = "<group>"; };
+		3A7611F91FA22E670035539B /* CDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDetailTableViewCell.swift; sourceTree = "<group>"; };
 		FB35E5281F0E915800984A08 /* IngredientTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientTableViewCell.swift; sourceTree = "<group>"; };
 		FB35E52A1F0E9B1900984A08 /* IngredientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientViewController.swift; sourceTree = "<group>"; };
 		FB3B15B01F1778E900A8FB4E /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
@@ -166,6 +174,7 @@
 				FBF2DB201F0505F900EA3622 /* ViewController.swift */,
 				FB35E52A1F0E9B1900984A08 /* IngredientViewController.swift */,
 				FB3C8D1C1F15329B0063D6FB /* CookingViewController.swift */,
+				3A7611F71FA22D190035539B /* CookingDetailViewController.swift */,
 				FB3B15B21F179A2400A8FB4E /* DetailViewController.swift */,
 				FBCB4D7C1F1FC72100415A42 /* IngredientDetailViewController.swift */,
 				FBF2DB221F0505F900EA3622 /* Main.storyboard */,
@@ -181,6 +190,7 @@
 				FB3C8D1A1F15320C0063D6FB /* CookingTableViewCell.swift */,
 				FB3B15B41F179B7D00A8FB4E /* DetailTableViewCell.swift */,
 				FBCB4D7E1F1FC9A300415A42 /* IDetailTableViewCell.swift */,
+				3A7611F91FA22E670035539B /* CDetailTableViewCell.swift */,
 			);
 			path = Recetas;
 			sourceTree = "<group>";
@@ -207,6 +217,8 @@
 			isa = PBXGroup;
 			children = (
 				3A7611F11FA212FC0035539B /* americana1.jpg */,
+				3A7611F31FA21A9A0035539B /* griega1.jpg */,
+				3A7611F51FA21E250035539B /* italiana1.jpg */,
 				FBB73CAD1F2656DE00F01364 /* cameraicon.png */,
 				FB3C8D1E1F1540910063D6FB /* cook1.jpg */,
 				FB3C8D1F1F1540910063D6FB /* cook2.jpg */,
@@ -337,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB3C8D161F1530E10063D6FB /* cooking.png in Resources */,
+				3A7611F41FA21A9B0035539B /* griega1.jpg in Resources */,
 				FBF2DB2C1F0505FA00EA3622 /* LaunchScreen.storyboard in Resources */,
 				FBF2DB641F052AF200EA3622 /* dessert2.jpg in Resources */,
 				FB3C8D231F1540910063D6FB /* cook3.jpg in Resources */,
@@ -351,6 +364,7 @@
 				FB3C8D221F1540910063D6FB /* cook2.jpg in Resources */,
 				FBF2DB291F0505FA00EA3622 /* Assets.xcassets in Resources */,
 				FBB73CAE1F2656DE00F01364 /* cameraicon.png in Resources */,
+				3A7611F61FA21E250035539B /* italiana1.jpg in Resources */,
 				FBF2DB241F0505F900EA3622 /* Main.storyboard in Resources */,
 				FBF2DB661F052AF200EA3622 /* dessert4.jpg in Resources */,
 				FBF2DB671F052AF200EA3622 /* dessert5.jpg in Resources */,
@@ -390,7 +404,9 @@
 				FB3B15B11F1778E900A8FB4E /* DataController.swift in Sources */,
 				FBF2DB501F050B7E00EA3622 /* Receta.swift in Sources */,
 				FB3B15B51F179B7D00A8FB4E /* DetailTableViewCell.swift in Sources */,
+				3A7611F81FA22D190035539B /* CookingDetailViewController.swift in Sources */,
 				FB35E5291F0E915800984A08 /* IngredientTableViewCell.swift in Sources */,
+				3A7611FA1FA22E670035539B /* CDetailTableViewCell.swift in Sources */,
 				3A7611F01FA20B5D0035539B /* Cocina.swift in Sources */,
 				FBF2DB521F051BAD00EA3622 /* RecipeTableViewCell.swift in Sources */,
 				FBCB4D7D1F1FC72100415A42 /* IngredientDetailViewController.swift in Sources */,

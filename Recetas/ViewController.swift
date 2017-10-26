@@ -26,9 +26,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let label = UILabel.init(frame: CGRect.init(x: 20, y: 10, width: UIScreen.main.bounds.width - 20, height: 56))
         if section==0{
+            label.textAlignment = .center
             label.text = "Platos"
         }
         else{
+            label.textAlignment = .center
             label.text = "Postres"
         }
         view.addSubview(label)
