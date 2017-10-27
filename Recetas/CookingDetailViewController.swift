@@ -18,7 +18,7 @@ class CookingDetailViewController:UIViewController, UITableViewDelegate, UITable
         self.tableView.dataSource = self
       
         for item in DataController.shareController.cocinaList{
-            if item.tipo.contains(cocinas.joined()){
+            if item.tipo.contains(cocinas.joined().lowercased()){
                 arraycocina.append(item)
             }
         }
@@ -45,7 +45,7 @@ class CookingDetailViewController:UIViewController, UITableViewDelegate, UITable
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
         
-        return 1
+        return arraycocina.count
     }
     
     func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
@@ -59,7 +59,7 @@ class CookingDetailViewController:UIViewController, UITableViewDelegate, UITable
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 539
+        return 245
     }
     
     func tableView(_ tableView: UITableView,

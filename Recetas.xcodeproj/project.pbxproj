@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A6B0B501FA3725F00882BF9 /* italiana2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B0B4F1FA3725E00882BF9 /* italiana2.jpg */; };
+		3A6B0B521FA3739300882BF9 /* americana2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B0B511FA3739300882BF9 /* americana2.jpg */; };
+		3A6B0B541FA3757600882BF9 /* griega2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B0B531FA3757500882BF9 /* griega2.jpg */; };
+		3A6B0B561FA37A7700882BF9 /* americana3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B0B551FA37A7700882BF9 /* americana3.jpeg */; };
+		3A6B0B581FA3834A00882BF9 /* americana4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B0B571FA3834900882BF9 /* americana4.jpeg */; };
+		3A6B0B5A1FA384F000882BF9 /* griega3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B0B591FA384EF00882BF9 /* griega3.jpg */; };
+		3A6B0B5E1FA3894500882BF9 /* italiana3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B0B5D1FA3894500882BF9 /* italiana3.jpg */; };
+		3A6B0B601FA38A8200882BF9 /* italiana4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B0B5F1FA38A8100882BF9 /* italiana4.jpg */; };
+		3A6B0B621FA38BA700882BF9 /* griega4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B0B611FA38BA600882BF9 /* griega4.jpg */; };
 		3A7611F01FA20B5D0035539B /* Cocina.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7611EF1FA20B5D0035539B /* Cocina.swift */; };
 		3A7611F21FA212FD0035539B /* americana1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A7611F11FA212FC0035539B /* americana1.jpg */; };
 		3A7611F41FA21A9B0035539B /* griega1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A7611F31FA21A9A0035539B /* griega1.jpg */; };
@@ -70,6 +79,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A6B0B4F1FA3725E00882BF9 /* italiana2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = italiana2.jpg; sourceTree = SOURCE_ROOT; };
+		3A6B0B511FA3739300882BF9 /* americana2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = americana2.jpg; sourceTree = SOURCE_ROOT; };
+		3A6B0B531FA3757500882BF9 /* griega2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = griega2.jpg; sourceTree = SOURCE_ROOT; };
+		3A6B0B551FA37A7700882BF9 /* americana3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = americana3.jpeg; sourceTree = SOURCE_ROOT; };
+		3A6B0B571FA3834900882BF9 /* americana4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = americana4.jpeg; sourceTree = SOURCE_ROOT; };
+		3A6B0B591FA384EF00882BF9 /* griega3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = griega3.jpg; sourceTree = SOURCE_ROOT; };
+		3A6B0B5D1FA3894500882BF9 /* italiana3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = italiana3.jpg; sourceTree = SOURCE_ROOT; };
+		3A6B0B5F1FA38A8100882BF9 /* italiana4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = italiana4.jpg; sourceTree = SOURCE_ROOT; };
+		3A6B0B611FA38BA600882BF9 /* griega4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = griega4.jpg; sourceTree = SOURCE_ROOT; };
 		3A7611EF1FA20B5D0035539B /* Cocina.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cocina.swift; sourceTree = "<group>"; };
 		3A7611F11FA212FC0035539B /* americana1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = americana1.jpg; sourceTree = SOURCE_ROOT; };
 		3A7611F31FA21A9A0035539B /* griega1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = griega1.jpg; sourceTree = SOURCE_ROOT; };
@@ -217,8 +235,17 @@
 			isa = PBXGroup;
 			children = (
 				3A7611F11FA212FC0035539B /* americana1.jpg */,
+				3A6B0B511FA3739300882BF9 /* americana2.jpg */,
+				3A6B0B551FA37A7700882BF9 /* americana3.jpeg */,
+				3A6B0B571FA3834900882BF9 /* americana4.jpeg */,
 				3A7611F31FA21A9A0035539B /* griega1.jpg */,
+				3A6B0B531FA3757500882BF9 /* griega2.jpg */,
+				3A6B0B591FA384EF00882BF9 /* griega3.jpg */,
+				3A6B0B611FA38BA600882BF9 /* griega4.jpg */,
 				3A7611F51FA21E250035539B /* italiana1.jpg */,
+				3A6B0B4F1FA3725E00882BF9 /* italiana2.jpg */,
+				3A6B0B5D1FA3894500882BF9 /* italiana3.jpg */,
+				3A6B0B5F1FA38A8100882BF9 /* italiana4.jpg */,
 				FBB73CAD1F2656DE00F01364 /* cameraicon.png */,
 				FB3C8D1E1F1540910063D6FB /* cook1.jpg */,
 				FB3C8D1F1F1540910063D6FB /* cook2.jpg */,
@@ -348,13 +375,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A6B0B521FA3739300882BF9 /* americana2.jpg in Resources */,
 				FB3C8D161F1530E10063D6FB /* cooking.png in Resources */,
 				3A7611F41FA21A9B0035539B /* griega1.jpg in Resources */,
 				FBF2DB2C1F0505FA00EA3622 /* LaunchScreen.storyboard in Resources */,
 				FBF2DB641F052AF200EA3622 /* dessert2.jpg in Resources */,
 				FB3C8D231F1540910063D6FB /* cook3.jpg in Resources */,
 				FB3C8D171F1530E10063D6FB /* ingredients.png in Resources */,
+				3A6B0B561FA37A7700882BF9 /* americana3.jpeg in Resources */,
 				3A7611F21FA212FD0035539B /* americana1.jpg in Resources */,
+				3A6B0B501FA3725F00882BF9 /* italiana2.jpg in Resources */,
 				FBB38C0D1F169A15009FF859 /* food5.jpg in Resources */,
 				FB3C8D191F1530E10063D6FB /* recipes.png in Resources */,
 				FBF2DB5A1F0522EF00EA3622 /* food2.jpg in Resources */,
@@ -363,14 +393,20 @@
 				FB3C8D211F1540910063D6FB /* cook1.jpg in Resources */,
 				FB3C8D221F1540910063D6FB /* cook2.jpg in Resources */,
 				FBF2DB291F0505FA00EA3622 /* Assets.xcassets in Resources */,
+				3A6B0B5E1FA3894500882BF9 /* italiana3.jpg in Resources */,
+				3A6B0B621FA38BA700882BF9 /* griega4.jpg in Resources */,
 				FBB73CAE1F2656DE00F01364 /* cameraicon.png in Resources */,
 				3A7611F61FA21E250035539B /* italiana1.jpg in Resources */,
 				FBF2DB241F0505F900EA3622 /* Main.storyboard in Resources */,
 				FBF2DB661F052AF200EA3622 /* dessert4.jpg in Resources */,
+				3A6B0B5A1FA384F000882BF9 /* griega3.jpg in Resources */,
 				FBF2DB671F052AF200EA3622 /* dessert5.jpg in Resources */,
+				3A6B0B541FA3757600882BF9 /* griega2.jpg in Resources */,
 				FBF2DB5C1F0522EF00EA3622 /* food4.jpg in Resources */,
 				FBF2DB651F052AF200EA3622 /* dessert3.jpg in Resources */,
+				3A6B0B581FA3834A00882BF9 /* americana4.jpeg in Resources */,
 				FB3C8D181F1530E10063D6FB /* profile.png in Resources */,
+				3A6B0B601FA38A8200882BF9 /* italiana4.jpg in Resources */,
 				FBB38C0B1F168F69009FF859 /* food3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

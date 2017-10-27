@@ -572,16 +572,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jgX-VW-N2V">
-                                <rect key="frame" x="0.0" y="0.0" width="415" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jgX-VW-N2V">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="657"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cdetailCell" rowHeight="217" id="5tE-cA-ntc" customClass="CDetailTableViewCell" customModule="Recetas" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="415" height="217"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="217"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5tE-cA-ntc" id="G3c-er-KQE">
-                                            <rect key="frame" x="0.0" y="0.0" width="415" height="216.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="216.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Skv-Vu-oGa">
@@ -592,7 +591,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ouZ-Ix-Vfc">
-                                                    <rect key="frame" x="36" y="37" width="322" height="154"/>
+                                                    <rect key="frame" x="25" y="37" width="322" height="154"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
@@ -606,6 +605,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jgX-VW-N2V" firstAttribute="leading" secondItem="5vw-CQ-sF9" secondAttribute="leading" id="QY5-Sm-Aqo"/>
+                            <constraint firstAttribute="trailing" secondItem="jgX-VW-N2V" secondAttribute="trailing" id="Qw7-EG-Npe"/>
+                            <constraint firstItem="jgX-VW-N2V" firstAttribute="top" secondItem="5vw-CQ-sF9" secondAttribute="top" id="wDW-BE-yvg"/>
+                            <constraint firstAttribute="bottom" secondItem="jgX-VW-N2V" secondAttribute="bottom" constant="10" id="zVI-eU-wWI"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="jgX-VW-N2V" id="t81-2U-fbQ"/>

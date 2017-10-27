@@ -11,7 +11,7 @@ import UIKit
 class CookingViewController:UIViewController, UITableViewDelegate, UITableViewDataSource{
     @IBOutlet var tableView:UITableView!
     var valuetoPass:String!
-    var cocinas=["americana","griega","italiana"]
+    var cocinas=["Americana","Griega","Italiana"]
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.delegate   = self
