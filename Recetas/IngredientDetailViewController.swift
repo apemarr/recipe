@@ -12,22 +12,31 @@ class IngredientDetailViewController:UIViewController, UITableViewDelegate, UITa
     var passedValue:String!
     var receta:Receta?
     var arrayingrediente:[Receta]=[]
-    
+    var arraycocina:[Cocina]=[]
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         for item in DataController.shareController.recetaList{
             if item.ingrediente.lowercased().contains(passedValue.lowercased()){
                 arrayingrediente.append(item)
+                
             }
         }
         for item2 in DataController.shareController.postreList{
             if item2.ingrediente.lowercased().contains(passedValue.lowercased()){
                 arrayingrediente.append(item2)
+            
+            }
+        }
+        for item3 in DataController.shareController.cocinaList{
+            if item3.ingrediente.lowercased().contains(passedValue.lowercased()){
+                arraycocina.append(item3)
+            
             }
         }
         self.tableView.delegate   = self
         self.tableView.dataSource = self
+        
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -44,7 +53,7 @@ class IngredientDetailViewController:UIViewController, UITableViewDelegate, UITa
         performSegue(withIdentifier: "idetailrecipe", sender: self)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        
+
         if (segue.identifier=="idetailrecipe"){
             if let indexPath = self.tableView.indexPathForSelectedRow{
                 let viewController=segue.destination as! DetailViewController
@@ -57,8 +66,13 @@ class IngredientDetailViewController:UIViewController, UITableViewDelegate, UITa
     
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
+        let numberofrows:[Int]=[arrayingrediente.count,arraycocina.count]
+        var rows: Int = 0
+        if section < numberofrows.count {
+            rows = numberofrows[section]
+        }
         
-        return arrayingrediente.count
+        return rows
     }
     
     func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
@@ -67,7 +81,7 @@ class IngredientDetailViewController:UIViewController, UITableViewDelegate, UITa
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return 2
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -75,21 +89,24 @@ class IngredientDetailViewController:UIViewController, UITableViewDelegate, UITa
         return 194
     }
     
-    func tableView(_ tableView: UITableView,
+  func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "idetailCell") as! IDetailTableViewCell
-        if arrayingrediente.isEmpty{
-            cell.titulo?.text=""
-            cell.imagen?.image=UIImage.init(named:"")
-            cell.autor?.text=""
-        }else{
+        let cell2 = tableView.dequeueReusableCell(withIdentifier: "idetailCell2") as! IDetailTableViewCell2
+
+    if indexPath.section==0{
         cell.titulo?.text=arrayingrediente[indexPath.row].titulo
         cell.imagen?.image=UIImage.init(named:arrayingrediente[indexPath.row].imagen)
         cell.autor?.text=arrayingrediente[indexPath.row].autor
-        }
-        return cell
+       return cell
     }
+    if indexPath.section==1{
+        cell2.titulo?.text=arraycocina[indexPath.row].titulo
+        cell2.imagen?.image=UIImage.init(named:arraycocina[indexPath.row].imagen)
+        return cell2
+    }
+    return cell
+}
 }
 
 

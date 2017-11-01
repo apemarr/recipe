@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A6715E91FA525CB007D70B3 /* IDetailTableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6715E81FA525CB007D70B3 /* IDetailTableViewCell2.swift */; };
 		3A6B0B501FA3725F00882BF9 /* italiana2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B0B4F1FA3725E00882BF9 /* italiana2.jpg */; };
 		3A6B0B521FA3739300882BF9 /* americana2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B0B511FA3739300882BF9 /* americana2.jpg */; };
 		3A6B0B541FA3757600882BF9 /* griega2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B0B531FA3757500882BF9 /* griega2.jpg */; };
@@ -79,6 +80,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A6715E81FA525CB007D70B3 /* IDetailTableViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDetailTableViewCell2.swift; sourceTree = "<group>"; };
 		3A6B0B4F1FA3725E00882BF9 /* italiana2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = italiana2.jpg; sourceTree = SOURCE_ROOT; };
 		3A6B0B511FA3739300882BF9 /* americana2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = americana2.jpg; sourceTree = SOURCE_ROOT; };
 		3A6B0B531FA3757500882BF9 /* griega2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = griega2.jpg; sourceTree = SOURCE_ROOT; };
@@ -208,6 +210,7 @@
 				FB3C8D1A1F15320C0063D6FB /* CookingTableViewCell.swift */,
 				FB3B15B41F179B7D00A8FB4E /* DetailTableViewCell.swift */,
 				FBCB4D7E1F1FC9A300415A42 /* IDetailTableViewCell.swift */,
+				3A6715E81FA525CB007D70B3 /* IDetailTableViewCell2.swift */,
 				3A7611F91FA22E670035539B /* CDetailTableViewCell.swift */,
 			);
 			path = Recetas;
@@ -443,6 +446,7 @@
 				3A7611F81FA22D190035539B /* CookingDetailViewController.swift in Sources */,
 				FB35E5291F0E915800984A08 /* IngredientTableViewCell.swift in Sources */,
 				3A7611FA1FA22E670035539B /* CDetailTableViewCell.swift in Sources */,
+				3A6715E91FA525CB007D70B3 /* IDetailTableViewCell2.swift in Sources */,
 				3A7611F01FA20B5D0035539B /* Cocina.swift in Sources */,
 				FBF2DB521F051BAD00EA3622 /* RecipeTableViewCell.swift in Sources */,
 				FBCB4D7D1F1FC72100415A42 /* IngredientDetailViewController.swift in Sources */,

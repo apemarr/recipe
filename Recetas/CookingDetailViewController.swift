@@ -65,7 +65,6 @@ class CookingDetailViewController:UIViewController, UITableViewDelegate, UITable
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cdetailCell") as! CDetailTableViewCell
-        
         if cocinas.isEmpty{
             cell.titulo?.text=""
             cell.imagen?.image=UIImage.init(named:"")
