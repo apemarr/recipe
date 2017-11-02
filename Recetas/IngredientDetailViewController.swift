@@ -56,8 +56,14 @@ class IngredientDetailViewController:UIViewController, UITableViewDelegate, UITa
 
         if (segue.identifier=="idetailrecipe"){
             if let indexPath = self.tableView.indexPathForSelectedRow{
+                let section=indexPath.section
                 let viewController=segue.destination as! DetailViewController
-                viewController.arrayingrediente.append(arrayingrediente[indexPath.row])
+                if section==0{
+                    viewController.arrayingrediente.append(arrayingrediente[indexPath.row])
+                }
+                else{
+                    viewController.arraycocina.append(arraycocina[indexPath.row])
+                }
             }
         }
     }

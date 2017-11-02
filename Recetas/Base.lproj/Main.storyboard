@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="47G-oS-AnV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="47G-oS-AnV">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -34,13 +34,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="21f-Vk-91y">
-                                                    <rect key="frame" x="11" y="46" width="352" height="192"/>
+                                                    <rect key="frame" x="18" y="43" width="338" height="192"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="192" id="JwN-md-x4f"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9K8-HT-AIH">
-                                                    <rect key="frame" x="8" y="246" width="359" height="21"/>
+                                                    <rect key="frame" x="15" y="243" width="345" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="XSN-1D-5lH"/>
                                                     </constraints>
@@ -49,7 +49,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PyI-fu-ZpI">
-                                                    <rect key="frame" x="8" y="275" width="359" height="21"/>
+                                                    <rect key="frame" x="15" y="272" width="345" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="Vtf-ou-g1Y"/>
                                                     </constraints>
@@ -614,6 +614,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="jgX-VW-N2V" id="t81-2U-fbQ"/>
+                        <segue destination="Agu-5R-Icx" kind="show" identifier="cdetailrecipe" id="3Ud-WW-OIk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5b0-ue-xXT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -788,7 +789,7 @@
         <image name="recipes.png" width="26" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="SRp-qb-TfH"/>
+        <segue reference="3Ud-WW-OIk"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.61927972274282661" green="0.74350477860492692" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

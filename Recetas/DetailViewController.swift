@@ -13,7 +13,8 @@ class DetailViewController:UIViewController, UITableViewDelegate, UITableViewDat
     var passedValue:String!
     var receta:Receta?
     var arrayingrediente:[Receta]=[]
-
+    var arraycocina:[Cocina]=[]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.delegate   = self
@@ -61,7 +62,7 @@ class DetailViewController:UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "detailCell") as! DetailTableViewCell
-        if arrayingrediente.isEmpty{
+        if arrayingrediente.isEmpty && arraycocina.isEmpty{
         cell.titulo?.text=receta?.titulo
         if let image=receta?.imagen{
             cell.imagen?.image=UIImage.init(named:image)
@@ -70,10 +71,18 @@ class DetailViewController:UIViewController, UITableViewDelegate, UITableViewDat
         cell.preparacion?.text=receta?.preparacion
         }
         else{
-            cell.titulo?.text=arrayingrediente[indexPath.row].titulo
-            cell.imagen?.image=UIImage.init(named:arrayingrediente[indexPath.row].imagen)
-            cell.ingredientes?.text=arrayingrediente[indexPath.row].ingrediente
-            cell.preparacion?.text=arrayingrediente[indexPath.row].preparacion
+            if arraycocina.isEmpty{
+                cell.titulo?.text=arrayingrediente[indexPath.row].titulo
+                cell.imagen?.image=UIImage.init(named:arrayingrediente[indexPath.row].imagen)
+                cell.ingredientes?.text=arrayingrediente[indexPath.row].ingrediente
+                cell.preparacion?.text=arrayingrediente[indexPath.row].preparacion
+            }
+            else{
+                cell.titulo?.text=arraycocina[indexPath.row].titulo
+                cell.imagen?.image=UIImage.init(named:arraycocina[indexPath.row].imagen)
+                cell.ingredientes?.text=arraycocina[indexPath.row].ingrediente
+                cell.preparacion?.text=arraycocina[indexPath.row].preparacion
+            }
         }
         return cell
         

@@ -35,10 +35,18 @@ class CookingDetailViewController:UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        
+        performSegue(withIdentifier: "cdetailrecipe", sender: self)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        
+        if (segue.identifier=="cdetailrecipe"){
+            if let indexPath = self.tableView.indexPathForSelectedRow{
+                let viewController=segue.destination as! DetailViewController
+                viewController.arraycocina.append(arraycocina[indexPath.row])
+            }
+        }
+    }
     
     // MARK: - UITableViewDataSource
     
